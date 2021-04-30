@@ -1,12 +1,15 @@
+import "./assets/main.scss";
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import FinancialStatement from "./pages/FinancialStatement";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FinancialStatement />
   </React.StrictMode>,
   document.getElementById('root')
 );

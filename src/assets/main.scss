@@ -1,0 +1,33 @@
+@import '~bootstrap/scss/bootstrap';
+
+.financial-table {
+  text-align: center;
+
+  th { vertical-align: middle }
+  tr {
+    :not(:last-child) {
+      td:nth-child(2) {
+        text-transform: capitalize;
+      }
+    }
+
+    :last-child {
+      td { font-weight: bold }
+    }
+
+    td {
+      text-align: left;
+      span {
+        display: inline-block;
+        :first-child { width: 30px; }
+        :last-child {
+          width: calc(100% - 30px);
+          text-align: right;
+        }
+      }
+    }
+
+
+
+  }
+}

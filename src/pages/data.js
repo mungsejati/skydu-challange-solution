@@ -1,0 +1,15 @@
+export const financialStatements = [
+  { date: "1 Januari 2021", info: 'saldo awal', debit: 21000000, credit: 0 },
+  { date: "1 Januari 2021", info: 'Gaji karyawan', debit: 0, credit: 3000000 },
+  { date: "1 Januari 2021", info: 'Service AC', debit: 0, credit: 500000 },
+  { date: "1 Januari 2021", info: 'Pembelian ATK', debit: 0, credit: 200000 },
+  { date: "2 Januari 2021", info: 'Pembayaran Order #3D20210001', debit: 500000, credit: 0 },
+  { date: "2 Januari 2021", info: 'Pembayaran Order #3D20210002', debit: 500000, credit: 0 },
+  { date: "5 Januari 2021", info: 'Pembayaran Order #3D20210005', debit: 200000, credit: 0 },
+  { date: "9 Januari 2021", info: 'Pembayaran Order #3D20210021', debit: 100000, credit: 0 },
+  { date: "14 Januari 2021", info: 'Pembelian unit PC', debit: 0, credit: 5970000 },
+  { date: "14 Januari 2021", info: 'Pembayaran Order #3D2021007', debit: 350000, credit: 0 },
+  { date: "18 Januari 2021", info: 'Pembayaran Order #3D2021011', debit: 275000, credit: 0 },
+  { date: "18 Januari 2021", info: 'Pembayaran Order #3D2021012', debit: 275000, credit: 0 },
+  { date: "25 Januari 2021", info: 'Pembayaran Order #3D2021016', debit: 500000, credit: 0 },
+];
