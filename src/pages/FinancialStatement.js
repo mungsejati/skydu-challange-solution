@@ -33,7 +33,7 @@ export default function FinancialStatement() {
             jumlahKredit= jumlahKredit+ data.credit;
 
             return (
-              <tr>
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{data.date}</td>
                 <td>{data.info}</td>

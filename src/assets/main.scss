@@ -3,15 +3,15 @@
 .financial-table {
   text-align: center;
 
-  th { vertical-align: middle }
+  thead th { vertical-align: middle }
   tr {
-    :not(:last-child) {
+    &:not(:last-child) {
       td:nth-child(2) {
         text-transform: capitalize;
       }
     }
 
-    :last-child {
+    &:last-child {
       td { font-weight: bold }
     }
 
@@ -19,11 +19,11 @@
       text-align: left;
       span {
         display: inline-block;
-        :first-child { width: 30px; }
-        :last-child {
-          width: calc(100% - 30px);
-          text-align: right;
-        }
+      }
+      :first-child { width: 30px; }
+      :last-child {
+        width: calc(100% - 30px);
+        text-align: right;
       }
     }
 
