@@ -4,9 +4,9 @@ import {numberFormat} from "../helpers/utils";
 import {financialStatements} from "./data";
 
 export default function FinancialStatement() {
-  let totalSaldo = 0;
-  let jumlahDebit = 0;
-  let jumlahKredit = 0;
+  let balance = 0;
+  let totalDebit = 0;
+  let totalCredit = 0;
 
   return (
     <Container fluid>
@@ -28,9 +28,9 @@ export default function FinancialStatement() {
         </thead>
         <tbody>
           {financialStatements.map((data, index) => {
-            totalSaldo = totalSaldo + data.debit - data.credit;
-            jumlahDebit = jumlahDebit + data.debit;
-            jumlahKredit= jumlahKredit+ data.credit;
+            balance = balance + data.debit - data.credit;
+            totalDebit = totalDebit + data.debit;
+            totalCredit = totalCredit + data.credit;
 
             return (
               <tr key={index}>
@@ -39,15 +39,15 @@ export default function FinancialStatement() {
                 <td>{data.info}</td>
                 <td><span>Rp</span><span>{numberFormat(data.debit)}</span></td>
                 <td><span>Rp</span><span>{numberFormat(data.credit)}</span></td>
-                <td><span>Rp</span><span>{numberFormat(totalSaldo)}</span></td>
+                <td><span>Rp</span><span>{numberFormat(balance)}</span></td>
               </tr>
             )
           })}
           <tr>
             <td colSpan={3}><b>TOTAL</b></td>
-            <td><span>Rp</span><span>{numberFormat(jumlahDebit)}</span></td>
-            <td><span>Rp</span><span>{numberFormat(jumlahKredit)}</span></td>
-            <td><span>Rp</span><span>{numberFormat(totalSaldo)}</span></td>
+            <td><span>Rp</span><span>{numberFormat(totalDebit)}</span></td>
+            <td><span>Rp</span><span>{numberFormat(totalCredit)}</span></td>
+            <td><span>Rp</span><span>{numberFormat(balance)}</span></td>
           </tr>
         </tbody>
       </Table>
