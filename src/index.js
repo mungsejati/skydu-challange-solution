@@ -4,12 +4,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import reportWebVitals from './reportWebVitals';
-import FinancialStatement from "./pages/FinancialStatement";
+import WordSearch from "./pages/WordSearch";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <FinancialStatement />
+    <WordSearch />
   </React.StrictMode>,
   document.getElementById('root')
 );
