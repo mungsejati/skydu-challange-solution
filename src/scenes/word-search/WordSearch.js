@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {WordSearchContainer} from "./components/WordSearch.styled";
-import Layout from "./components/Layout";
+import {WordSearchContainer} from "./WordSearch.styled";
+import Layout from "../../components/Layout";
 
 export default class WordSearch extends Component {
   constructor(props) {

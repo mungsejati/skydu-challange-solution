@@ -1,15 +1,13 @@
-import "./assets/main.scss";
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import reportWebVitals from './reportWebVitals';
-import WordSearch from "./pages/WordSearch";
+import WebRouter from "./Routes";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <WordSearch />
+    <WebRouter />
   </React.StrictMode>,
   document.getElementById('root')
 );

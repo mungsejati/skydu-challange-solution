@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Table } from "react-bootstrap";
-import {numberFormat} from "../helpers/utils";
-import {financialStatements} from "./data";
+import {numberFormat} from "../../helpers/utils";
+import {financialStatements} from "../../helpers/data";
+import "../../assets/main.scss";
 
 export default function FinancialStatement() {
   let balance = 0;
@@ -9,7 +10,8 @@ export default function FinancialStatement() {
   let totalCredit = 0;
 
   return (
-    <Container fluid>
+    <div className="use-bootstrap">
+      <Container fluid>
       <h2 className="text-center">Table Keuangan</h2>
       <h3 className="text-center">Januari 2021</h3>
       <Table className="financial-table" bordered striped >
@@ -52,5 +54,6 @@ export default function FinancialStatement() {
         </tbody>
       </Table>
     </Container>
+    </div>
   )
 }
