@@ -49,7 +49,6 @@ export default class ReportDashboard extends Component {
   }
 
   createNewReport = () => {
-    console.log(this.state.month, this.state.year)
     fetch('http://localhost:3001/reports', {
       method: 'POST',
       body: JSON.stringify({

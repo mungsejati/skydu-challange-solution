@@ -10,7 +10,7 @@ const LayoutContainer = styled.div`
 
 function Layout({children}) {
   return (
-    <LayoutContainer>
+    <LayoutContainer className="use-bootstrap">
       {children}
     </LayoutContainer>
   )
