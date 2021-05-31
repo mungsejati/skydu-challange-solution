@@ -13,6 +13,8 @@ export default function WebRouter() {
         <Router>
           <CustomCardName />
         </Router>
+        <Route exact path="/reports" component={ReportDashboard}/>
+        <Route exact path="/reports/:reportId" component={ReportDetail}/>
       </Switch>
     </Router>
   )

@@ -1,0 +1,32 @@
+{
+  "reports": [
+    {
+      "id": 1,
+      "year": "2021",
+      "month": "Januar1"
+    },
+    {
+      "id": 2,
+      "year": "2021",
+      "month": "Februar1"
+    }
+  ],
+  "report_data": [
+    {
+      "id": 1,
+      "reportId": 1,
+      "date": "01-01-2021",
+      "info": "Saldo awal",
+      "debit": 21000000,
+      "credit": 0
+    },
+    {
+      "id": 2,
+      "reportId": 2,
+      "date": "02-01-2021",
+      "info": "Saldo awal",
+      "debit": 21000000,
+      "credit": 0
+    }
+  ]
+}
